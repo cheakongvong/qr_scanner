@@ -30,7 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 );
               },
-              child: const Text('Scan QR'),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.red),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Text('Scan QR'),
+              ),
             ),
             const SizedBox(height: 10),
             MaterialButton(
@@ -42,7 +49,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 );
               },
-              child: const Text('QR Document'),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.red),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Text('QR Document'),
+              ),
             ),
           ],
         ),
